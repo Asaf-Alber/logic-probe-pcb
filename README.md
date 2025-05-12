@@ -46,7 +46,8 @@ The RC filter (R5 and C1) is used to average the PWM input signal into a steady 
 
 ## 🖼️ 3D Preview
 
-![3D View](3D%20View.png)
+![3D View](3D%20view.png)
+
 
 ---
 
