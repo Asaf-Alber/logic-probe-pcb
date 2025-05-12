@@ -1,20 +1,35 @@
-# Logic Probe PCB – EasyEDA
+# 🔧 Logic Probe PCB v1.0
 
-A simple logic probe circuit designed in EasyEDA, including:
-- Schematic
-- PCB layout
-- Gerber files for fabrication
-- 3D view screenshot
+A custom logic probe circuit board designed using EasyEDA to diagnose digital signals and logic states.
 
-## Labels
-- `REF_LOW`, `REF_HIGH`, `REF_MID`: Voltage dividers and mid-point reference
-- `RC Filter`: PWM input filtering (R5 + C1)
-- `LED1`, `LED2`, `LED3`: LOW, HIGH, and PWM logic indicators
+## 💡 Project Overview
+This project implements:
+- **Three-state logic indication**: LOW, HIGH, and PWM (logic toggling)
+- **Comparators (U1, U4)** with reference voltages
+- **RC Low-pass filter** to detect PWM signals
+- **LED indicators** with pull-up resistors
+- **USB power input**
 
-## Files Included
-- 📄 Schematic PDF  
-- 📄 PCB layout PDF  
-- 📂 Gerber folder  
-- 📄 Project JSON file  
+## 🧩 Circuit Details
+| Component | Description |
+|-----------|-------------|
+| R1–R4     | Voltage dividers for `REF_LOW` and `REF_HIGH` |
+| R5 + C1   | RC filter for smoothing PWM signal |
+| R6–R7     | Midpoint voltage reference |
+| U1, U4    | Comparators to evaluate logic level |
+| U2        | USB power input |
+| LED1-3    | LOW, HIGH, PWM state indicators |
 
-Designed by Asaf Alber, 2025
+## 🖼️ 3D Preview
+![3D View](3D%20View.png)
+
+## 📂 Included Files
+- ✅ Gerber files (for fabrication)
+- ✅ Schematic PDF
+- ✅ PCB layout PDF
+- ✅ EasyEDA JSON file
+- ✅ 3D rendered image
+
+## 👨‍💻 Author
+Designed by **Asaf Alber** — aspiring Hardware Engineer.
+
