@@ -49,6 +49,22 @@ The following schematic maps the logic described above to the physical design.
 
 ---
 
+## 📈 Waveform Simulation
+
+Below is a simulated signal passing through LOW, PWM, and HIGH regions. The dashed lines represent the logic thresholds.
+
+![Waveform](waveform.png)
+
+---
+
+## 🧱 3D Preview
+
+View of the final PCB board with all labeled components.
+
+![3D View](3D%20view.png)
+
+---
+
 ## 🧠 Summary
 
 This project demonstrates your ability to:
