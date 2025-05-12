@@ -71,7 +71,7 @@ The following schematic maps the logic described above to the physical design.
 
 Below is a simulated signal passing through LOW, PWM, and HIGH regions. The dashed lines represent the logic thresholds.
 
-![Waveform](waveform.png)
+![Waveform](./assets/waveform.png)
 
 ---
 
@@ -83,9 +83,20 @@ View of the final PCB board with all labeled components.
 
 ---
 
+## ▶️ How to Use
+
+1. Connect 5V and GND to the probe input header.
+2. Attach the input signal to the `SIGNAL_IN` pin.
+3. Observe the LED indicators:
+   - 🔴 Red = LOW
+   - 🟢 Green = HIGH
+   - 🔵 Blue = PWM (toggle)
+   - 
+---
 ## 🧠 Summary
 
-This project demonstrates your ability to:
+
+This project demonstrates my ability to:
 - Design with analog comparators
 - Create and apply RC filters
 - Use voltage dividers for reference generation
