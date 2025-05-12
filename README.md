@@ -21,6 +21,24 @@ This logic probe tool was designed to identify signal states (LOW, HIGH, or PWM 
 
 ---
 
+## ⚡ Reference Thresholds (VCC = 5V)
+
+The logic probe operates assuming a 5V logic level. The voltage dividers create reference points to distinguish between LOW, HIGH, and toggling states:
+
+| Reference     | Approx. Voltage | Description                                    |
+|---------------|------------------|------------------------------------------------|
+| `REF_LOW`     | ~1.5 V           | If signal is below this → considered **LOW**   |
+| `REF_MID`     | ~2.5 V           | Midpoint used to detect PWM/toggling signals   |
+| `REF_HIGH`    | ~3.0–3.3 V       | If signal is above this → considered **HIGH**  |
+
+- **PWM signals** that toggle rapidly (e.g., square waves) are **averaged** by the RC filter into a mid-level voltage.
+- By comparing this average to `REF_MID`, the circuit can distinguish between static and dynamic signals.
+
+These thresholds are set using **resistor dividers** (R1–R4 for LOW/HIGH, R6–R7 for MID), calculated relative to VCC (5V).
+
+
+---
+
 ## 🎛️ RC Filter Functionality
 
 The **RC filter**, composed of `R5` and `C1`, is a **low-pass filter** that smooths out high-frequency transitions. This is essential for identifying PWM signals. When a signal toggles rapidly, the filtered output settles at a middle voltage, which is then compared to **REF_MID** (~2.5V) using comparator `U3`.
