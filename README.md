@@ -21,7 +21,7 @@ This project implements:
 | LED1-3    | LOW, HIGH, PWM state indicators |
 
 ## 🖼️ 3D Preview
-![3D View](3D view.png)
+![3D View](3D%20view.png)
 
 ## 📂 Included Files
 - ✅ Gerber files (for fabrication)
