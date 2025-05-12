@@ -45,7 +45,7 @@ Each divider scales `VCC` into usable thresholds for the comparators.
 
 The following schematic maps the logic described above to the physical design.
 
-![Annotated Schematic](Annotated_Schematic_for_Readme.png)
+![Annotated Schematic](schematic_logic_probe.png)
 
 ---
 
