@@ -43,7 +43,7 @@ The following schematic maps the logic described above to the physical design.
 
 Below is a simulated signal passing through LOW, PWM, and HIGH regions. The dashed lines represent the logic thresholds.
 
-![Waveform](waveform.png)
+![Waveform](simulation_logic_probe.png)
 
 ---
 
